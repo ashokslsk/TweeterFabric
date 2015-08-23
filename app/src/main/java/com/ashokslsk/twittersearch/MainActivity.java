@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 String userName = result.data.getUserName();
                 Toast.makeText(getApplicationContext(), userName, Toast.LENGTH_LONG).show();
                 Log.d("login", userName);
+                Intent in = new Intent(MainActivity.this, twitterSearch.class);
+                startActivity(in);
 
             }
 
